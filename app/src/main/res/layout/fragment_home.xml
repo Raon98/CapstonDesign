@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#472A2B"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:orientation="vertical" />
+
+        <FrameLayout
+            android:id="@+id/bellclick"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="right">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/bell"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="right"
+                android:scaleType="centerCrop"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/bell" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/main_mid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_top"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/mid_top"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/crown" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cookierun"
+                    android:gravity="center_horizontal"
+                    android:text="자취왕"
+                    android:textColor="#43390D"
+                    android:textSize="60sp" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/mid_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mid_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp">
+
+                <ImageButton
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/button"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="TODO"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.133"
+                    app:srcCompat="@drawable/button" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/mid_mid2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mid_mid"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="300dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_button">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="295dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="310dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="1dp"
+                            android:background="@drawable/custom_button"
+                            android:gravity="center">
+
+                            <com.smarteist.autoimageslider.SliderView
+                                android:id="@+id/image_slider"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                app:sliderAnimationDuration="600"
+                                app:sliderAutoCycleDirection="back_and_forth"
+                                app:sliderAutoCycleEnabled="true"
+                                app:sliderIndicatorAnimationDuration="600"
+                                app:sliderIndicatorGravity="center_horizontal|bottom"
+                                app:sliderIndicatorMargin="15dp"
+                                app:sliderIndicatorOrientation="horizontal"
+                                app:sliderIndicatorPadding="3dp"
+                                app:sliderIndicatorRadius="2dp"
+                                app:sliderIndicatorSelectedColor="@color/com_kakao_button_background_press"
+                                app:sliderIndicatorUnselectedColor="#FFFACD"
+                                app:sliderScrollTimeInSec="2"
+                                app:sliderStartAutoCycle="true" />
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mid_botm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mid_mid2"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/mid_botm"
+                android:layout_alignParentBottom="false"
+                android:background="#FFDF24"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bottom1"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:background="#EDA900"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

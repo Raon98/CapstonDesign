@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.kakao.sdk:kakaotalk:1.30.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../.gradle/caches/transforms-2/files-2.1/6e3fbcd6abd31c405d00107166cde543/jetified-kakaotalk-1.30.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../../../../.gradle/caches/transforms-2/files-2.1/6e3fbcd6abd31c405d00107166cde543/jetified-kakaotalk-1.30.0/res" />
+      <root url="file://$PROJECT_DIR$/../../../../../../.gradle/caches/transforms-2/files-2.1/6e3fbcd6abd31c405d00107166cde543/jetified-kakaotalk-1.30.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../.gradle/caches/modules-2/files-2.1/com.kakao.sdk/kakaotalk/1.30.0/fd24d21054d0c312048a260d8a9a1741bc437f21/kakaotalk-1.30.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

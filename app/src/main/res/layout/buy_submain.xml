@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:layoutDescription="@xml/buy_submain_scene2"
+    tools:context=".controller.BuySubMain">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bs_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFBB00"
+
+        />
+
+    <Button
+        android:id="@+id/sub_buy_back"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/sub_buy_nick"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/cookierun"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/bs_mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bs_top"
+        android:layout_centerHorizontal="true"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbars="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/pager2"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                    </androidx.viewpager2.widget.ViewPager2>
+
+                    <LinearLayout
+                        android:id="@+id/dotsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:orientation="vertical">
+
+                        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                            android:id="@+id/dots_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            app:dotsColor="#FFD700"
+                            app:dotsCornerRadius="8dp"
+                            app:dotsSize="16dp"
+                            app:dotsSpacing="4dp"
+                            app:dotsWidthFactor="2.5"
+                            app:progressMode="true"
+                            app:selectedDotColor="#751400" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/buynick"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/lemon"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:background="@drawable/custom_change"
+                            app:cardCornerRadius="100dp">
+
+                            <ImageView
+                                android:id="@+id/Myinfoimage"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                tools:srcCompat="@drawable/com_facebook_profile_picture_blank_square" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/sub_name"
+                                android:layout_width="100dp"
+                                android:layout_height="29dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/soldier"
+                                android:gravity="center|left"
+                                android:text="닉네임"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/sub_place"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginLeft="20dp"
+                                android:fontFamily="@font/soldier"
+                                android:text="장소"
+                                android:textColor="@color/black"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/buynick"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/sub_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/cookierun"
+                            android:gravity="center|left"
+                            android:shadowColor="@color/black"
+                            android:text="제목"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center|left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/cookierun"
+                                android:gravity="center"
+                                android:text="모집인원:"
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:id="@+id/nowCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/cookierun"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/cookierun"
+                                android:gravity="center"
+                                android:text="명"
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/cookierun"
+                                android:gravity="center"
+                                android:text=" / "
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+
+
+                            <TextView
+                                android:id="@+id/headCount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/cookierun"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:fontFamily="@font/cookierun"
+                                android:gravity="center"
+                                android:text="명"
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <Button
+                                    android:id="@+id/Countaddbtn"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@drawable/ic_baseline_expand_less_24"
+                                    android:text="Button" />
+
+                                <Button
+                                    android:id="@+id/Countdelbtn"
+                                    android:layout_width="50dp"
+                                    android:layout_height="35dp"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                    android:text="Button" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/sub_Contents"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/white"
+                            android:shadowColor="@color/black"
+                            android:text="아이패드 삽니다"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/teal_700"
+        android:gravity="center|left">
+
+        <ImageView
+            android:id="@+id/interest_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/interest_prv" />
+
+        <TextView
+            android:id="@+id/sub_price"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/interest_btn"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="false"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/soldier"
+            android:gravity="center|left"
+            android:text="130,000원"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/sub_chat"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/custom_subbutton"
+            android:fontFamily="@font/soldier"
+            android:text="채팅으로 거래하기"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

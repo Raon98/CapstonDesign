@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.capstondesign">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <queries> <package android:name="com.facebook.katana" /> </queries>
+
+    <application
+        android:allowBackup="true"
+        tools:replace="android:label"
+        android:icon="@mipmap/ic_launcher"
+        android:label="자취왕"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:name=".model.KakaoSDKInit"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        tools:targetApi="m">
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+
+        <activity android:name=".controller.Intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".controller.Fragment_main" />
+        <activity android:name=".controller.SignUpActivity" />
+        <activity android:name=".controller.FastSignUpActivity" />
+        <activity android:name=".controller.in_chat_room"/>
+        <activity android:name=".controller.LoginAcitivity" />
+        <activity android:name=".controller.add_Board"/>
+        <activity android:name=".controller.Phone_check"/>
+        <activity android:name=".controller.FreeBoard"/>
+        <activity android:name=".controller.Search"/>
+        <activity android:name=".controller.Search_result"/>
+        <activity android:name=".controller.Notice"/>
+        <activity android:name=".controller.add_GroupBuying"/>
+        <activity android:name=".controller.in_profile"/>
+        <activity android:name=".controller.in_watchlist"/>
+        <activity android:name=".controller.BuySubMain"/>
+        <activity android:name=".controller.in_setting"/>
+        <activity android:name=".controller.in_change_password"/>
+        <activity android:name=".controller.in_notice"/>
+        <activity android:name=".controller.notice_inside"/>
+        <activity android:name=".controller.in_withdraw"/>
+        <activity android:name=".controller.BuySubMain_watchlist"/>
+        <activity android:name=".controller.Search_Groupbuy"/>
+        <activity android:name=".controller.Search_Groupbuy_result"/>
+        <activity android:name=".controller.in_board"/>
+        <activity android:name=".controller.showMyGroupBuying"/>
+        <activity android:name=".controller.showMyBoard"/>
+        <activity android:name=".controller.BuySubMain_showGroupBuying"/>
+        <activity android:name=".controller.FreeBoard_showBoard"/>
+
+    </application>
+
+</manifest>

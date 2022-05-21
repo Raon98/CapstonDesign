@@ -1,0 +1,48 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryDark">#E65100</item>
+        <item name="colorAccent">#FF4081</item>
+
+    </style>
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="content_text">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="comment_name">
+        <item name="android:textColor">#FFC600</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="comment_content">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="roundimageview1" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/white</item>
+    </style>
+
+</resources>

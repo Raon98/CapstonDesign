@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "874039528437",
+    "firebase_url": "https://capstondesign-d240f-default-rtdb.firebaseio.com",
+    "project_id": "capstondesign-d240f",
+    "storage_bucket": "capstondesign-d240f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874039528437:android:09ea9b0c524b716541aebc",
+        "android_client_info": {
+          "package_name": "com.example.capstondesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874039528437-3n3tjvnfivr462rj4bmle3pchfj0g069.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.capstondesign",
+            "certificate_hash": "8187cf160786361610a1af8d0754edc3b0663553"
+          }
+        },
+        {
+          "client_id": "874039528437-0p1eurlmooo7o1gsn9o6s805b8itd7l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZMKBUefZzvsEqF6uz_Lio57wPZYGhDZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874039528437-0p1eurlmooo7o1gsn9o6s805b8itd7l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

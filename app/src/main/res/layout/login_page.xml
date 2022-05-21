@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layoutDescription="@xml/login_page_scene">
+
+
+    <LinearLayout
+        android:id="@+id/boardplus_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FFBB00"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_arrow_back_24" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boardplus_top">
+
+        <FrameLayout
+            android:layout_width="320dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/cookierun"
+                android:gravity="center|left"
+                android:text="자취왕"
+                android:textColor="#43390D"
+                android:textSize="60sp" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="100dp"
+                android:contentDescription="TODO"
+                android:paddingLeft="10dp"
+                app:srcCompat="@drawable/crown" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_lg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/login_name"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/username"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/border"
+                android:hint="username"
+                android:textColor="@color/black">
+
+                <requestFocus></requestFocus>
+            </EditText>
+
+            <EditText
+                android:id="@+id/password"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/border"
+                android:inputType="textPassword"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/custom_change"
+                android:fontFamily="@font/cookierun"
+                android:gravity="center"
+                android:text="로그인"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_member"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/login_btn"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="190dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="아직 회원이 아니신가요?"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="회원가입"
+                android:textColor="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="TextView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_coll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_member"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/naver"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_naver_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#1EC800"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+
+                        android:background="@drawable/anaver"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/kakao"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/kakao_Log"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFE400"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/akakao"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.kakao.usermgmt.LoginButton
+                        android:id="@+id/login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/facebook"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/facebook_login"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="#0A6EFF"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/afacebook"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="30dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toTopOf="@+id/btn_login" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/login_coll"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="vertical" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

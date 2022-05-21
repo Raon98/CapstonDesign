@@ -1,0 +1,72 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/inboard_top"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#FFDF24">
+
+                <Button
+                    android:id="@+id/inboard_exit"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/ic_baseline_arrow_back_24" />
+
+                <TextView
+                    android:id="@+id/title_text"
+                    style="@style/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="제목"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/inboard_mid2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border2"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
